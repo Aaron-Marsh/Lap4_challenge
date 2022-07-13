@@ -90,6 +90,70 @@ could be >
 /53thankfulstories
 
 
+
+## Handling duplicates/ infinte possibilites:
+
+- a string will try to be generated
+- if it's a duplicate, already in the DB then it runs again
+- it repeats this process 10x. 
+- If it still can't find a unquie string after 10 attempts it will had a single int
+- it will attempt this 3 times before adding another digit
+
+EXAMPLE:
+
+random gen url = you-bab 
+
+x already exists, try again
+
+random gen url = you-pol
+
+x
+
+random gen url = you-qat
+
+x
+
+(10 times for failing)
+
+random gen url = you-qat2
+
+x
+
+random gen url = you-qat6
+
+x
+
+random gen url = you-qat1
+
+x
+
+still failing, add another digit:
+
+random gen url = you-qat47
+
+x
+
+random gen url = you-qat76
+
+x
+
+random gen url = you-qat90
+
+x
+
+STILL FAILING?!
+
+random gen url = you-qat651
+
+x
+
+random gen url = you-qat241
+
+success!
+
+my shortened url is  you-qat241
+
+
 <hr>
 
 # DATA:
