@@ -1,8 +1,6 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1>ltl-url</h1>
-    <h2>The URL Shortener</h2>
     <form id ="shorten-form" action="/shorten" method="POST">
         <input id="url" name="url" type="text" placeholder="Enter URL">
         <select name="url-type" id="urlType">
@@ -15,6 +13,8 @@
             <!-- <option value"">Make Your Own!</option> -->
         </select>
         <input id="shorten-submit" type="submit" value="Submit">
+        <p>e.g.</p>
+        <p id="example-url">https://ltl-url.herokuapp.com/ltl-url</p>
     </form>
 
 

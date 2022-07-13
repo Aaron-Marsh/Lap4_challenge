@@ -6,7 +6,10 @@ CORS(app)
 
 import Methods.shortMethods as sm
 
-url_list = [{'url': 'https://www.youtube.com/watch?v=pTFZFxd4hOI&t=582s&ab_channel=ProgrammingwithMosh', 'short_url': 'you-gyc'}]
+url_list = [{'url': 'https://www.youtube.com/watch?v=pTFZFxd4hOI&t=582s&ab_channel=ProgrammingwithMosh','short_url': 'you-gyc'},
+{'url': 'https://ltl-url.herokuapp.com/', 'short_url': 'ltl-url'},
+{'url': 'https://ltl-url.herokuapp.com/', 'short_url': 'lahu'},
+{'url': 'https://ltl-url.herokuapp.com/', 'short_url': '89lazypandas'}]
 
 @app.route("/")
 def home():
