@@ -47,9 +47,13 @@ we kept it all lower case as it's much easy for people to say, remember and type
 
 Eg.
 https://www.bbc.com/news/live/world-asia-62144703
+
 could be >
+
 /bbc-tomi
+
 /bbc-wila
+
 /bbc-piko
 
 ### Option 2- Random 4 letter word
@@ -58,12 +62,67 @@ could be >
 
 Eg.
 https://www.bbc.com/news/live/world-asia-62144703
+
 could be >
+
 /lina
+
 /zuta
+
 /kema
 
 
 
+### Option 3- Silly Sentence
+
+  - Generate a readable string: number + adj + noun
+
+Eg.
+
+https://www.bbc.com/news/live/world-asia-62144703
+
+could be >
+
+/89sillypotatoes
+
+/12agressiveholidays
+
+/53thankfulstories
 
 
+<hr>
+
+# DATA:
+
+### Silly_Sentence:
+
+- 207 nouns stored in a tuple 
+- 227 adjs stored in a tuple
+
+### DB Structure:
+
+with more time we'd move to postgres
+
+```
+[
+  {"short_url":"you-gyc","url":"https://www.youtube.com/watch?v=pTFZFxd4hOI&t=582s&ab_channel=ProgrammingwithMosh"},
+  {"short_url":"ltl-url","url":"https://ltl-url.herokuapp.com/"},
+  {"short_url":"lahu","url":"https://ltl-url.herokuapp.com/"}
+  
+]
+```
+
+<hr>
+
+## Endpoints:
+
+/    = homepage
+
+/url_list   = entire DB
+
+/shorten    = displays the newly created url
+
+
+## Test:
+
+hmmmmm nada so far :/ 
