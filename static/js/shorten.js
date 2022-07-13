@@ -3,6 +3,7 @@ shortenForm = document.getElementById('shorten-form')
 urlType = document.getElementById('urlType')
 example = document.getElementById('example-url')
 
+
 shortenForm.addEventListener('input', (e) => {
     let type = e.target.value;
     if (type === 'ltl-url') {

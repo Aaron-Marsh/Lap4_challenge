@@ -1,8 +1,12 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <p>{{url}} has become https://ltl-url.herokuapp.com/{{short_url}}</p>
+    <p>{{url}}</p>
+    <p>has become</p>
+    <p id="new-short-url">https://ltl-url.herokuapp.com/{{short_url}}</p>
+
+    <button id="copy-btn">Copy</button>
     <button onclick="window.location='/'">Create another url</button>
 
-  
+    <script src="{{ url_for('static', filename='/js/copy.js') }}"></script>
 {% endblock %}
