@@ -29,6 +29,10 @@ button {
     border-radius: 5px;
 }
 
+button:active {
+    transform: translateY(4px);
+}
+
 .submit-btn {
     font-family: 'Merriweather', serif;
     padding: 10px;
@@ -36,6 +40,10 @@ button {
     border: none;
     color: white;
     border-radius: 5px;
+}
+
+.submit-btn:active {
+    transform: translateY(4px);
 }
 
 .url-input {
