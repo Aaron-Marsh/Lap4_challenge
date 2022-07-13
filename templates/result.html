@@ -2,12 +2,14 @@
 
 {% block content %}
     <p>{{url}}</p>
-    <p>has become</p>
-    <div class="copy-link-box">
+    <p>has become:</p>
         <p id="new-short-url">https://ltl-url.herokuapp.com/{{short_url}}</p>
-        <button id="copy-btn">Copy</button>
-    </div>
-    <button onclick="window.location='/'">Create another url</button>
+
+      
+            <button id="copy-btn">Copy new url</button>
+            
+            <button onclick="window.location='/'">Create another url</button>
+     
 
     <script src="{{ url_for('static', filename='/js/copy.js') }}"></script>
 {% endblock %}

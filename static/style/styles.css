@@ -22,7 +22,6 @@ p {
 
 button {
     font-family: 'Merriweather', serif;
-    /* padding: 10px; */
 }
 
 .submit-btn {
@@ -41,9 +40,6 @@ button {
     padding: 10px;
 }
 
-.copy-link-box {
-    display: flex;
-}
 
 #copy-btn {
     margin-left: 1rem;
