@@ -2,17 +2,13 @@
 
 {% block content %}
     <form id ="shorten-form" action="/shorten" method="POST">
-        <input id="url" name="url" type="text" placeholder="Enter URL">
-        <select name="url-type" id="urlType">
+        <input id="url" name="url" type="text" placeholder="Enter URL" class="url-input">
+        <select name="url-type" id="urlType" class="type-input">
             <option value="ltl-url">ltl-url</option>
-            <!-- <option value="">shorten URl + Word</option> -->
             <option value="4Letters">4 Letters</option>
-            <!-- <option value="">Num + Noun</option> -->
-            <!-- <option value="">Adj + Noun</option> -->
             <option value="sillySentence">Silly Sentence</option>
-            <!-- <option value"">Make Your Own!</option> -->
         </select>
-        <input id="shorten-submit" type="submit" value="Submit">
+        <input id="shorten-submit" type="submit" value="Submit" class="submit-btn">
         <p>Create a url like:</p>
         <p id="example-url">https://ltl-url.herokuapp.com/ltl-url</p>
     </form>
