@@ -3,13 +3,21 @@
 {% block content %}
     <h1>ltl-url</h1>
     <h2>The URL Shortener</h2>
-    <form action="">
-        <input type="text" placeholder="Enter URL">
-        <select name="url-type" id="url-type">
-            <option value="">ltl-url</option>
-            <option value="">27redpotatoes</option>
-            <option value=""></option>
+    <form id ="shorten-form" action="/shorten" method="POST">
+        <input id="url" name="url" type="text" placeholder="Enter URL">
+        <select name="url-type" id="urlType">
+            <option value="ltl-url">ltl-url</option>
+            <option value="27redpotatoes">27redpotatoes</option>
+            <option value="">shorten URl + Word</option>
+            <option value="">4 Letter Word</option>
+            <!-- <option value="">Num + Noun</option> -->
+            <!-- <option value="">Adj + Noun</option> -->
+            <option value="">Silly Sentence</option>
+            <!-- <option value"">Make Your Own!</option> -->
         </select>
-        <input type="submit" value="Submit">
+        <input id="shorten-submit" type="submit" value="Submit">
     </form>
+
+
+    <script src="{{ url_for('static', filename='/js/shorten.js') }}"></script>
 {% endblock %}
