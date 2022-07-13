@@ -23,11 +23,19 @@ p {
 button {
     font-family: 'Merriweather', serif;
     padding: 10px;
+    background-color: darkviolet;
+    border: none;
+    color: white;
+    border-radius: 5px;
 }
 
 .submit-btn {
     font-family: 'Merriweather', serif;
     padding: 10px;
+    background-color: darkviolet;
+    border: none;
+    color: white;
+    border-radius: 5px;
 }
 
 .url-input {
