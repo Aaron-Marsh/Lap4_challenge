@@ -2,6 +2,16 @@
 import random
 mock_db=['pod-cus','duv-has','you-dos']
 # to run, call shorten_url(oringalurl)
+import random
+from site import addpackage #not sure
+import Methods.words as words
+
+rc = random.choice
+
+def sillystring():
+    return str(random.randint(2,99))+rc(words.adjs)+rc(words.nouns)
+
+
 def shorten_url(url):
     c=0
     numofattempts=10
@@ -24,23 +34,20 @@ def www_checker(url):
     if 'www.' in url:
         print('there is www.')
         url_startpos = url.find('www.')+4
-        short_url = url[url_startpos:url_startpos+3:]+'-'+gen_rand_word(2)
+        short_url = url[url_startpos:url_startpos+3:]+'-'+gen_rand_word()
     else:
         # short_url = gen_rand_word(0)
         url_startpos = url.find('//')+2
-        short_url = url[url_startpos:url_startpos+3:]+'-'+gen_rand_word(2)
+        short_url = url[url_startpos:url_startpos+3:]+'-'+gen_rand_word()
     return short_url
 
-def gen_rand_word(length):
+def gen_rand_word():
     rc=random.choice
     vowel=['a','e','i','o','u']
     cons=['q','w','r','t','y','p','s','d','f','g','h','j','k','l','z','c','v','b','n','m'] #x is missing
-    if length ==2:
-        random_word = rc(cons)+rc(vowel)+rc(cons)
-        return random_word
-    else:
-        random_word = rc(cons)+rc(vowel)+rc(cons)+'-'+rc(cons)+rc(vowel)+rc(cons)
-        return random_word
+    random_word = rc(cons)+rc(vowel)+rc(cons)+rc(vowel)
+    return random_word
+   
 
 def add_numbers(short_url):
     highest_num=9
